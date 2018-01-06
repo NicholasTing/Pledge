@@ -9,12 +9,26 @@
         <script type="text/javascript" src="webworker.js">
 
         </script>
+
+        <link rel="stylesheet" href="webworker.css">
     </head>
     <body>
         <h1>Web Worker</h1>
-        
-        <button type="button" id="button">Submit</button>
-        <h1>The list of numbers</h1>
+
+        <div class="test">
+            <p>Note that the Test Button is there simply to show that
+            it does now freeze the UI thread. You can still click on it.</p>
+        </div>
+
+        <label>Enter a value:</label>
+        <hr>
+        <button type="button">Test</button>
+        <input type="text" id="fibinput">
+        <button type="button" id="button">Find Fibonacci</button>
+        <button type="button" id="stop">Stop</button>
+
+        <h3>The answer of the fibonacci number will go below here.</h3>
         <p id="demo"></p>
+
     </body>
 </html>

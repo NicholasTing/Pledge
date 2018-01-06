@@ -2,7 +2,9 @@
 self.onmessage = function (e) {
      rcvdMessage = e.data;
 
-     self.postMessage("You said: " + fibonacci(rcvdMessage));
+     self.postMessage("The fibonnaci number of " + e.data + " is " +
+                        fibonacci(rcvdMessage));
+
 };
 
 var fibonacci = function(n){
